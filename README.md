@@ -2,7 +2,7 @@
 
 ### General information
 
-This is Codecademy project to project joins syntax. In this project I used SQL statements to combine rows from three tables:
+This is Codecademy project to practice joins syntax. In this project I used SQL statements to combine rows from three tables:
 
 ```trips```: trips information
 
