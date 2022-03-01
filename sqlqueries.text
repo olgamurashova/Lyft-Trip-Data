@@ -1,0 +1,7 @@
+1. Analyzing three tables with data about Lyft trips and riders:
+
+SELECT * FROM trips;
+ 
+SELECT * FROM riders;
+ 
+SELECT * FROM cars;
