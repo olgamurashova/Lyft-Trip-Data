@@ -100,4 +100,10 @@ SELECT COUNT(*)
 FROM cars
 WHERE status = 'active';
 
-10. 
+10. Finding the two cars that have teh highest trips_cpmpleted:
+
+SELECT *
+FROM cars
+ORDER BY trips_completed DESC
+LIMIT 2;
+
