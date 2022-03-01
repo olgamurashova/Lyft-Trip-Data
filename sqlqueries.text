@@ -1,3 +1,34 @@
+Column names:
+
+trips table:
+
+id - trip ID
+date - trip date
+pickup - pickup time stamp
+dropoff - drop-off time stamp
+rider_id - user ID
+car_id - car ID
+type - type of trip (X, POOL, XL)
+cost - trip cost
+
+riders table:
+
+id - user ID
+first - user first name
+last - user last name
+username - user handle
+rating - user average rating
+total_trips - total rides ridden
+referred - referred by (user ID)
+
+cars table:
+
+id - car ID
+model - car model
+OS - operating system
+status - active or maintenance
+trips_completed - total trips completed
+
 1. Analyzing three tables with data about Lyft trips and riders:
 
 SELECT * FROM trips;
@@ -5,3 +36,12 @@ SELECT * FROM trips;
 SELECT * FROM riders;
  
 SELECT * FROM cars;
+
+2. Creating a trip log using LEFT JOIN:
+
+SELECT *
+FROM trips
+LEFT JOIN riders
+on trips.rider_id = riders.id
+
+3. 
