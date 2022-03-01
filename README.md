@@ -10,7 +10,7 @@ This is Codecademy project to project joins syntax. In this project I used SQL s
 
 ```cars```: autonomous cars
 
-Below is an example to a query used to create Trips Log and output combining data from there tables:
+Below is an example to a query used to create Trip Log and output combining data from there tables:
 ```
 SELECT trips.date, 
    trips.pickup, 
@@ -24,8 +24,11 @@ FROM trips
 LEFT JOIN riders 
   ON trips.rider_id = riders.id;
  ```
+![Trip Log2](https://user-images.githubusercontent.com/89424060/156229746-4142a597-faaa-4305-a27d-ba60cadaef12.png)
   
   
   
 
 ### Tools used
+
++ SQLite
