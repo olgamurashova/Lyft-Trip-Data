@@ -44,4 +44,16 @@ FROM trips
 LEFT JOIN riders
 on trips.rider_id = riders.id
 
-3. 
+3. Filtering data in trip log:
+
+SELECT trips.date, 
+   trips.pickup, 
+   trips.dropoff, 
+   trips.type, 
+   trips.cost,
+   riders.first, 
+   riders.last,
+   riders.username
+FROM trips
+LEFT JOIN riders 
+  ON trips.rider_id = riders.id;
