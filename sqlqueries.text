@@ -57,3 +57,20 @@ SELECT trips.date,
 FROM trips
 LEFT JOIN riders 
   ON trips.rider_id = riders.id;
+  
+4. Creating a link between trips and cars:
+
+SELECT *
+FROM trips
+JOIN cars
+ON trips.car_id = cars.id;
+
+5. Stacking one riders dataset on top of another:
+
+SELECT *
+FROM riders
+UNION 
+SELECT *
+FROM riders2;
+
+6. 
